@@ -17,6 +17,16 @@ vac = []
 
 sumofall = np.zeros((100,100))
 
+plt.ion()
+
+fig = plt.figure(figsize=(6,3.2))
+ax = fig.add_subplot(111)
+plt.imshow(sumofall)
+ax.set_aspect('equal')
+ax.set_xlabel('initial vaccinated')
+ax.set_ylabel('percent chance of infection')
+plt.pause(10)
+
 for k in range(0,100):
     mostinfected = []
     for j in range(0,100):
@@ -48,14 +58,10 @@ for k in range(0,100):
         mostinfected.append(infectedmax)
     mostinfected = np.asarray(mostinfected)
     sumofall+=mostinfected
+    plt.imshow(sumofall)
+    plt.pause(0.001)
+    plt.show()
 
 
-sumofall =  sumofall/300
+#sumofall =  sumofall/300
 
-fig = plt.figure(figsize=(6,3.2))
-ax = fig.add_subplot(111)
-plt.imshow(sumofall)
-ax.set_aspect('equal')
-ax.set_xlabel('initial vaccinated')
-ax.set_ylabel('percent chance of infection')
-plt.show()
