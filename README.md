@@ -4,4 +4,4 @@ The .so file is my python library of my c++ files made with the Boost.Python wra
 
 
 The simulatoin below is showing how the amount vaccinated compares to the chance that the infection will spread. The brighter the color the more people infected at its peak. This particular graph shows 100 iterations at 2x speed.
-![Alt Text](https://raw.githubusercontent.com/corykacal/SIR-Model/master/misc/graph.gif?raw=true)
+![Alt Text](https://github.com/corykacal/SIR-Model/blob/master/misc/graph.gif)
